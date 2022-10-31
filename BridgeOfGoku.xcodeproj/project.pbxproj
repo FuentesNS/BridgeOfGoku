@@ -86,27 +86,8 @@
 		3F973F05290FAC7200625877 = {
 			isa = PBXGroup;
 			children = (
-				F79E95752910322D009049F2 /* StartExplosion.sks */,
-				F79E956929102D5F009049F2 /* bg_country.mp3 */,
-				F79E956429102D5F009049F2 /* dead.wav */,
-				F79E956629102D5F009049F2 /* fall.wav */,
-				F79E956729102D5F009049F2 /* highScore.wav */,
-				F79E956A29102D5F009049F2 /* kick.wav */,
-				F79E956829102D5F009049F2 /* stick_grow_loop.wav */,
-				F79E956529102D5F009049F2 /* touch_mid.wav */,
-				F79E956329102D5F009049F2 /* victory.wav */,
-				F79E956029102D54009049F2 /* starParticle.png */,
-				F79E955B29102D4A009049F2 /* button_retry_down.png */,
-				F79E955C29102D4A009049F2 /* button_retry_up.png */,
-				F79E955929102D2E009049F2 /* Background.jpg */,
-				F79E954B29102D1C009049F2 /* GokuCorriendo1.png */,
-				F79E955029102D1C009049F2 /* GokuCorriendo2.png */,
-				F79E954C29102D1C009049F2 /* GokuCorriendo3.png */,
-				F79E954929102D1C009049F2 /* GokuCorriendo4.png */,
-				F79E954D29102D1C009049F2 /* GokuCorriendo5.png */,
-				F79E954F29102D1C009049F2 /* GokuCorriendo6.png */,
-				F79E954E29102D1C009049F2 /* GokuCorriendo7.png */,
-				F79E954A29102D1C009049F2 /* GokuCorriendo8.png */,
+				F79E957829103BB9009049F2 /* Sounds */,
+				F79E957729103B98009049F2 /* Images */,
 				3F973F10290FAC7200625877 /* BridgeOfGoku */,
 				3F973F0F290FAC7200625877 /* Products */,
 			);
@@ -123,7 +104,7 @@
 		3F973F10290FAC7200625877 /* BridgeOfGoku */ = {
 			isa = PBXGroup;
 			children = (
-				3F973F2E290FAD4F00625877 /* Info.plist */,
+				F79E95752910322D009049F2 /* StartExplosion.sks */,
 				3F973F2C290FACCF00625877 /* GokuGameScene.swift */,
 				3F973F2A290FACBF00625877 /* Defined.swift */,
 				3F973F28290FACAC00625877 /* Tools.swift */,
@@ -132,8 +113,43 @@
 				3F973F1B290FAC7200625877 /* Main.storyboard */,
 				3F973F1E290FAC7400625877 /* Assets.xcassets */,
 				3F973F20290FAC7400625877 /* LaunchScreen.storyboard */,
+				3F973F2E290FAD4F00625877 /* Info.plist */,
 			);
 			path = BridgeOfGoku;
+			sourceTree = "<group>";
+		};
+		F79E957729103B98009049F2 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				F79E956029102D54009049F2 /* starParticle.png */,
+				F79E955B29102D4A009049F2 /* button_retry_down.png */,
+				F79E955C29102D4A009049F2 /* button_retry_up.png */,
+				F79E955929102D2E009049F2 /* Background.jpg */,
+				F79E954B29102D1C009049F2 /* GokuCorriendo1.png */,
+				F79E955029102D1C009049F2 /* GokuCorriendo2.png */,
+				F79E954C29102D1C009049F2 /* GokuCorriendo3.png */,
+				F79E954929102D1C009049F2 /* GokuCorriendo4.png */,
+				F79E954D29102D1C009049F2 /* GokuCorriendo5.png */,
+				F79E954F29102D1C009049F2 /* GokuCorriendo6.png */,
+				F79E954E29102D1C009049F2 /* GokuCorriendo7.png */,
+				F79E954A29102D1C009049F2 /* GokuCorriendo8.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		F79E957829103BB9009049F2 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				F79E956929102D5F009049F2 /* bg_country.mp3 */,
+				F79E956429102D5F009049F2 /* dead.wav */,
+				F79E956629102D5F009049F2 /* fall.wav */,
+				F79E956729102D5F009049F2 /* highScore.wav */,
+				F79E956A29102D5F009049F2 /* kick.wav */,
+				F79E956829102D5F009049F2 /* stick_grow_loop.wav */,
+				F79E956529102D5F009049F2 /* touch_mid.wav */,
+				F79E956329102D5F009049F2 /* victory.wav */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
