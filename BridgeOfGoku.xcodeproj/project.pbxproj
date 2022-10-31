@@ -15,27 +15,27 @@
 		3F973F29290FACAC00625877 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F973F28290FACAC00625877 /* Tools.swift */; };
 		3F973F2B290FACBF00625877 /* Defined.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F973F2A290FACBF00625877 /* Defined.swift */; };
 		3F973F2D290FACD000625877 /* GokuGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F973F2C290FACCF00625877 /* GokuGameScene.swift */; };
-		3F973F39290FAD6500625877 /* GokuCorriendo6.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F973F30290FAD6400625877 /* GokuCorriendo6.png */; };
-		3F973F3A290FAD6500625877 /* GokuCorriendo7.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F973F31290FAD6400625877 /* GokuCorriendo7.png */; };
-		3F973F3B290FAD6500625877 /* GokuCorriendo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F973F32290FAD6400625877 /* GokuCorriendo2.png */; };
-		3F973F3C290FAD6500625877 /* GokuCorriendo8.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F973F33290FAD6400625877 /* GokuCorriendo8.png */; };
-		3F973F3D290FAD6500625877 /* GokuCorriendo5.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F973F34290FAD6400625877 /* GokuCorriendo5.png */; };
-		3F973F3E290FAD6500625877 /* GokuCorriendo1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F973F35290FAD6400625877 /* GokuCorriendo1.png */; };
-		3F973F3F290FAD6500625877 /* Background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F973F36290FAD6500625877 /* Background.jpg */; };
-		3F973F40290FAD6500625877 /* GokuCorriendo4.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F973F37290FAD6500625877 /* GokuCorriendo4.png */; };
-		3F973F41290FAD6500625877 /* GokuCorriendo3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F973F38290FAD6500625877 /* GokuCorriendo3.png */; };
-		3F973F4A290FAD7C00625877 /* highScore.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3F973F42290FAD7B00625877 /* highScore.wav */; };
-		3F973F4B290FAD7C00625877 /* victory.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3F973F43290FAD7B00625877 /* victory.wav */; };
-		3F973F4C290FAD7C00625877 /* kick.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3F973F44290FAD7B00625877 /* kick.wav */; };
-		3F973F4D290FAD7C00625877 /* bg_country.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3F973F45290FAD7B00625877 /* bg_country.mp3 */; };
-		3F973F4E290FAD7C00625877 /* fall.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3F973F46290FAD7B00625877 /* fall.wav */; };
-		3F973F4F290FAD7C00625877 /* stick_grow_loop.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3F973F47290FAD7B00625877 /* stick_grow_loop.wav */; };
-		3F973F50290FAD7C00625877 /* dead.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3F973F48290FAD7B00625877 /* dead.wav */; };
-		3F973F51290FAD7C00625877 /* touch_mid.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3F973F49290FAD7B00625877 /* touch_mid.wav */; };
-		3F973F54290FAD8900625877 /* button_retry_down.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F973F52290FAD8900625877 /* button_retry_down.png */; };
-		3F973F55290FAD8900625877 /* button_retry_up.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F973F53290FAD8900625877 /* button_retry_up.png */; };
-		3F973F60290FB07900625877 /* StarExplosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3F973F5E290FB07900625877 /* StarExplosion.sks */; };
-		3F973F61290FB07900625877 /* starParticle.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F973F5F290FB07900625877 /* starParticle.png */; };
+		F79E955129102D1C009049F2 /* GokuCorriendo4.png in Resources */ = {isa = PBXBuildFile; fileRef = F79E954929102D1C009049F2 /* GokuCorriendo4.png */; };
+		F79E955229102D1C009049F2 /* GokuCorriendo8.png in Resources */ = {isa = PBXBuildFile; fileRef = F79E954A29102D1C009049F2 /* GokuCorriendo8.png */; };
+		F79E955329102D1C009049F2 /* GokuCorriendo1.png in Resources */ = {isa = PBXBuildFile; fileRef = F79E954B29102D1C009049F2 /* GokuCorriendo1.png */; };
+		F79E955429102D1C009049F2 /* GokuCorriendo3.png in Resources */ = {isa = PBXBuildFile; fileRef = F79E954C29102D1C009049F2 /* GokuCorriendo3.png */; };
+		F79E955529102D1C009049F2 /* GokuCorriendo5.png in Resources */ = {isa = PBXBuildFile; fileRef = F79E954D29102D1C009049F2 /* GokuCorriendo5.png */; };
+		F79E955629102D1C009049F2 /* GokuCorriendo7.png in Resources */ = {isa = PBXBuildFile; fileRef = F79E954E29102D1C009049F2 /* GokuCorriendo7.png */; };
+		F79E955729102D1C009049F2 /* GokuCorriendo6.png in Resources */ = {isa = PBXBuildFile; fileRef = F79E954F29102D1C009049F2 /* GokuCorriendo6.png */; };
+		F79E955829102D1C009049F2 /* GokuCorriendo2.png in Resources */ = {isa = PBXBuildFile; fileRef = F79E955029102D1C009049F2 /* GokuCorriendo2.png */; };
+		F79E955A29102D2E009049F2 /* Background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F79E955929102D2E009049F2 /* Background.jpg */; };
+		F79E955D29102D4A009049F2 /* button_retry_down.png in Resources */ = {isa = PBXBuildFile; fileRef = F79E955B29102D4A009049F2 /* button_retry_down.png */; };
+		F79E955E29102D4A009049F2 /* button_retry_up.png in Resources */ = {isa = PBXBuildFile; fileRef = F79E955C29102D4A009049F2 /* button_retry_up.png */; };
+		F79E956229102D54009049F2 /* starParticle.png in Resources */ = {isa = PBXBuildFile; fileRef = F79E956029102D54009049F2 /* starParticle.png */; };
+		F79E956B29102D5F009049F2 /* victory.wav in Resources */ = {isa = PBXBuildFile; fileRef = F79E956329102D5F009049F2 /* victory.wav */; };
+		F79E956C29102D5F009049F2 /* dead.wav in Resources */ = {isa = PBXBuildFile; fileRef = F79E956429102D5F009049F2 /* dead.wav */; };
+		F79E956D29102D5F009049F2 /* touch_mid.wav in Resources */ = {isa = PBXBuildFile; fileRef = F79E956529102D5F009049F2 /* touch_mid.wav */; };
+		F79E956E29102D5F009049F2 /* fall.wav in Resources */ = {isa = PBXBuildFile; fileRef = F79E956629102D5F009049F2 /* fall.wav */; };
+		F79E956F29102D5F009049F2 /* highScore.wav in Resources */ = {isa = PBXBuildFile; fileRef = F79E956729102D5F009049F2 /* highScore.wav */; };
+		F79E957029102D5F009049F2 /* stick_grow_loop.wav in Resources */ = {isa = PBXBuildFile; fileRef = F79E956829102D5F009049F2 /* stick_grow_loop.wav */; };
+		F79E957129102D5F009049F2 /* bg_country.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F79E956929102D5F009049F2 /* bg_country.mp3 */; };
+		F79E957229102D5F009049F2 /* kick.wav in Resources */ = {isa = PBXBuildFile; fileRef = F79E956A29102D5F009049F2 /* kick.wav */; };
+		F79E95762910322D009049F2 /* StartExplosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = F79E95752910322D009049F2 /* StartExplosion.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,27 +49,27 @@
 		3F973F2A290FACBF00625877 /* Defined.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defined.swift; sourceTree = "<group>"; };
 		3F973F2C290FACCF00625877 /* GokuGameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GokuGameScene.swift; sourceTree = "<group>"; };
 		3F973F2E290FAD4F00625877 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3F973F30290FAD6400625877 /* GokuCorriendo6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GokuCorriendo6.png; path = "../../../Downloads/Goku sin backgroun/GokuCorriendo6.png"; sourceTree = "<group>"; };
-		3F973F31290FAD6400625877 /* GokuCorriendo7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GokuCorriendo7.png; path = "../../../Downloads/Goku sin backgroun/GokuCorriendo7.png"; sourceTree = "<group>"; };
-		3F973F32290FAD6400625877 /* GokuCorriendo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GokuCorriendo2.png; path = "../../../Downloads/Goku sin backgroun/GokuCorriendo2.png"; sourceTree = "<group>"; };
-		3F973F33290FAD6400625877 /* GokuCorriendo8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GokuCorriendo8.png; path = "../../../Downloads/Goku sin backgroun/GokuCorriendo8.png"; sourceTree = "<group>"; };
-		3F973F34290FAD6400625877 /* GokuCorriendo5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GokuCorriendo5.png; path = "../../../Downloads/Goku sin backgroun/GokuCorriendo5.png"; sourceTree = "<group>"; };
-		3F973F35290FAD6400625877 /* GokuCorriendo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GokuCorriendo1.png; path = "../../../Downloads/Goku sin backgroun/GokuCorriendo1.png"; sourceTree = "<group>"; };
-		3F973F36290FAD6500625877 /* Background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Background.jpg; path = "../../../Downloads/Goku sin backgroun/Background.jpg"; sourceTree = "<group>"; };
-		3F973F37290FAD6500625877 /* GokuCorriendo4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GokuCorriendo4.png; path = "../../../Downloads/Goku sin backgroun/GokuCorriendo4.png"; sourceTree = "<group>"; };
-		3F973F38290FAD6500625877 /* GokuCorriendo3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GokuCorriendo3.png; path = "../../../Downloads/Goku sin backgroun/GokuCorriendo3.png"; sourceTree = "<group>"; };
-		3F973F42290FAD7B00625877 /* highScore.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = highScore.wav; path = "../Complemtos De Proyectos/Proycetos Swift/BrigdeOfGoku/Sound/highScore.wav"; sourceTree = "<group>"; };
-		3F973F43290FAD7B00625877 /* victory.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = victory.wav; path = "../Complemtos De Proyectos/Proycetos Swift/BrigdeOfGoku/Sound/victory.wav"; sourceTree = "<group>"; };
-		3F973F44290FAD7B00625877 /* kick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = kick.wav; path = "../Complemtos De Proyectos/Proycetos Swift/BrigdeOfGoku/Sound/kick.wav"; sourceTree = "<group>"; };
-		3F973F45290FAD7B00625877 /* bg_country.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = bg_country.mp3; path = "../Complemtos De Proyectos/Proycetos Swift/BrigdeOfGoku/Sound/bg_country.mp3"; sourceTree = "<group>"; };
-		3F973F46290FAD7B00625877 /* fall.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = fall.wav; path = "../Complemtos De Proyectos/Proycetos Swift/BrigdeOfGoku/Sound/fall.wav"; sourceTree = "<group>"; };
-		3F973F47290FAD7B00625877 /* stick_grow_loop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = stick_grow_loop.wav; path = "../Complemtos De Proyectos/Proycetos Swift/BrigdeOfGoku/Sound/stick_grow_loop.wav"; sourceTree = "<group>"; };
-		3F973F48290FAD7B00625877 /* dead.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = dead.wav; path = "../Complemtos De Proyectos/Proycetos Swift/BrigdeOfGoku/Sound/dead.wav"; sourceTree = "<group>"; };
-		3F973F49290FAD7B00625877 /* touch_mid.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = touch_mid.wav; path = "../Complemtos De Proyectos/Proycetos Swift/BrigdeOfGoku/Sound/touch_mid.wav"; sourceTree = "<group>"; };
-		3F973F52290FAD8900625877 /* button_retry_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = button_retry_down.png; path = "../Complemtos De Proyectos/Proycetos Swift/BrigdeOfGoku/Images/button_retry_down.png"; sourceTree = "<group>"; };
-		3F973F53290FAD8900625877 /* button_retry_up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = button_retry_up.png; path = "../Complemtos De Proyectos/Proycetos Swift/BrigdeOfGoku/Images/button_retry_up.png"; sourceTree = "<group>"; };
-		3F973F5E290FB07900625877 /* StarExplosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = StarExplosion.sks; path = "../Complemtos De Proyectos/Proycetos Swift/BrigdeOfGoku/Sks/StarExplosion.sks"; sourceTree = "<group>"; };
-		3F973F5F290FB07900625877 /* starParticle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = starParticle.png; path = "../Complemtos De Proyectos/Proycetos Swift/BrigdeOfGoku/Sks/starParticle.png"; sourceTree = "<group>"; };
+		F79E954929102D1C009049F2 /* GokuCorriendo4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GokuCorriendo4.png; sourceTree = "<group>"; };
+		F79E954A29102D1C009049F2 /* GokuCorriendo8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GokuCorriendo8.png; sourceTree = "<group>"; };
+		F79E954B29102D1C009049F2 /* GokuCorriendo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GokuCorriendo1.png; sourceTree = "<group>"; };
+		F79E954C29102D1C009049F2 /* GokuCorriendo3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GokuCorriendo3.png; sourceTree = "<group>"; };
+		F79E954D29102D1C009049F2 /* GokuCorriendo5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GokuCorriendo5.png; sourceTree = "<group>"; };
+		F79E954E29102D1C009049F2 /* GokuCorriendo7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GokuCorriendo7.png; sourceTree = "<group>"; };
+		F79E954F29102D1C009049F2 /* GokuCorriendo6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GokuCorriendo6.png; sourceTree = "<group>"; };
+		F79E955029102D1C009049F2 /* GokuCorriendo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GokuCorriendo2.png; sourceTree = "<group>"; };
+		F79E955929102D2E009049F2 /* Background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Background.jpg; sourceTree = "<group>"; };
+		F79E955B29102D4A009049F2 /* button_retry_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_retry_down.png; sourceTree = "<group>"; };
+		F79E955C29102D4A009049F2 /* button_retry_up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_retry_up.png; sourceTree = "<group>"; };
+		F79E956029102D54009049F2 /* starParticle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = starParticle.png; sourceTree = "<group>"; };
+		F79E956329102D5F009049F2 /* victory.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = victory.wav; sourceTree = "<group>"; };
+		F79E956429102D5F009049F2 /* dead.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dead.wav; sourceTree = "<group>"; };
+		F79E956529102D5F009049F2 /* touch_mid.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = touch_mid.wav; sourceTree = "<group>"; };
+		F79E956629102D5F009049F2 /* fall.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = fall.wav; sourceTree = "<group>"; };
+		F79E956729102D5F009049F2 /* highScore.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = highScore.wav; sourceTree = "<group>"; };
+		F79E956829102D5F009049F2 /* stick_grow_loop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = stick_grow_loop.wav; sourceTree = "<group>"; };
+		F79E956929102D5F009049F2 /* bg_country.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bg_country.mp3; sourceTree = "<group>"; };
+		F79E956A29102D5F009049F2 /* kick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = kick.wav; sourceTree = "<group>"; };
+		F79E95752910322D009049F2 /* StartExplosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StartExplosion.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,31 +86,27 @@
 		3F973F05290FAC7200625877 = {
 			isa = PBXGroup;
 			children = (
-				3F973F5E290FB07900625877 /* StarExplosion.sks */,
-				3F973F5F290FB07900625877 /* starParticle.png */,
-				3F973F52290FAD8900625877 /* button_retry_down.png */,
-				3F973F53290FAD8900625877 /* button_retry_up.png */,
-				3F973F45290FAD7B00625877 /* bg_country.mp3 */,
-				3F973F48290FAD7B00625877 /* dead.wav */,
-				3F973F46290FAD7B00625877 /* fall.wav */,
-				3F973F42290FAD7B00625877 /* highScore.wav */,
-				3F973F44290FAD7B00625877 /* kick.wav */,
-				3F973F47290FAD7B00625877 /* stick_grow_loop.wav */,
-				3F973F49290FAD7B00625877 /* touch_mid.wav */,
-				3F973F43290FAD7B00625877 /* victory.wav */,
-				3F973F2E290FAD4F00625877 /* Info.plist */,
-				3F973F36290FAD6500625877 /* Background.jpg */,
-				3F973F35290FAD6400625877 /* GokuCorriendo1.png */,
-				3F973F32290FAD6400625877 /* GokuCorriendo2.png */,
-				3F973F38290FAD6500625877 /* GokuCorriendo3.png */,
-				3F973F37290FAD6500625877 /* GokuCorriendo4.png */,
-				3F973F34290FAD6400625877 /* GokuCorriendo5.png */,
-				3F973F30290FAD6400625877 /* GokuCorriendo6.png */,
-				3F973F31290FAD6400625877 /* GokuCorriendo7.png */,
-				3F973F33290FAD6400625877 /* GokuCorriendo8.png */,
-				3F973F2C290FACCF00625877 /* GokuGameScene.swift */,
-				3F973F2A290FACBF00625877 /* Defined.swift */,
-				3F973F28290FACAC00625877 /* Tools.swift */,
+				F79E95752910322D009049F2 /* StartExplosion.sks */,
+				F79E956929102D5F009049F2 /* bg_country.mp3 */,
+				F79E956429102D5F009049F2 /* dead.wav */,
+				F79E956629102D5F009049F2 /* fall.wav */,
+				F79E956729102D5F009049F2 /* highScore.wav */,
+				F79E956A29102D5F009049F2 /* kick.wav */,
+				F79E956829102D5F009049F2 /* stick_grow_loop.wav */,
+				F79E956529102D5F009049F2 /* touch_mid.wav */,
+				F79E956329102D5F009049F2 /* victory.wav */,
+				F79E956029102D54009049F2 /* starParticle.png */,
+				F79E955B29102D4A009049F2 /* button_retry_down.png */,
+				F79E955C29102D4A009049F2 /* button_retry_up.png */,
+				F79E955929102D2E009049F2 /* Background.jpg */,
+				F79E954B29102D1C009049F2 /* GokuCorriendo1.png */,
+				F79E955029102D1C009049F2 /* GokuCorriendo2.png */,
+				F79E954C29102D1C009049F2 /* GokuCorriendo3.png */,
+				F79E954929102D1C009049F2 /* GokuCorriendo4.png */,
+				F79E954D29102D1C009049F2 /* GokuCorriendo5.png */,
+				F79E954F29102D1C009049F2 /* GokuCorriendo6.png */,
+				F79E954E29102D1C009049F2 /* GokuCorriendo7.png */,
+				F79E954A29102D1C009049F2 /* GokuCorriendo8.png */,
 				3F973F10290FAC7200625877 /* BridgeOfGoku */,
 				3F973F0F290FAC7200625877 /* Products */,
 			);
@@ -127,6 +123,10 @@
 		3F973F10290FAC7200625877 /* BridgeOfGoku */ = {
 			isa = PBXGroup;
 			children = (
+				3F973F2E290FAD4F00625877 /* Info.plist */,
+				3F973F2C290FACCF00625877 /* GokuGameScene.swift */,
+				3F973F2A290FACBF00625877 /* Defined.swift */,
+				3F973F28290FACAC00625877 /* Tools.swift */,
 				3F973F11290FAC7200625877 /* AppDelegate.swift */,
 				3F973F19290FAC7200625877 /* GameViewController.swift */,
 				3F973F1B290FAC7200625877 /* Main.storyboard */,
@@ -194,30 +194,30 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F973F3C290FAD6500625877 /* GokuCorriendo8.png in Resources */,
-				3F973F3F290FAD6500625877 /* Background.jpg in Resources */,
-				3F973F4F290FAD7C00625877 /* stick_grow_loop.wav in Resources */,
-				3F973F54290FAD8900625877 /* button_retry_down.png in Resources */,
+				F79E955829102D1C009049F2 /* GokuCorriendo2.png in Resources */,
+				F79E956229102D54009049F2 /* starParticle.png in Resources */,
+				F79E955129102D1C009049F2 /* GokuCorriendo4.png in Resources */,
 				3F973F1D290FAC7200625877 /* Main.storyboard in Resources */,
-				3F973F4D290FAD7C00625877 /* bg_country.mp3 in Resources */,
-				3F973F3E290FAD6500625877 /* GokuCorriendo1.png in Resources */,
-				3F973F4A290FAD7C00625877 /* highScore.wav in Resources */,
-				3F973F51290FAD7C00625877 /* touch_mid.wav in Resources */,
-				3F973F61290FB07900625877 /* starParticle.png in Resources */,
-				3F973F60290FB07900625877 /* StarExplosion.sks in Resources */,
-				3F973F4C290FAD7C00625877 /* kick.wav in Resources */,
-				3F973F3B290FAD6500625877 /* GokuCorriendo2.png in Resources */,
-				3F973F50290FAD7C00625877 /* dead.wav in Resources */,
-				3F973F41290FAD6500625877 /* GokuCorriendo3.png in Resources */,
-				3F973F4B290FAD7C00625877 /* victory.wav in Resources */,
-				3F973F55290FAD8900625877 /* button_retry_up.png in Resources */,
-				3F973F3D290FAD6500625877 /* GokuCorriendo5.png in Resources */,
+				F79E955629102D1C009049F2 /* GokuCorriendo7.png in Resources */,
+				F79E956D29102D5F009049F2 /* touch_mid.wav in Resources */,
+				F79E957229102D5F009049F2 /* kick.wav in Resources */,
+				F79E95762910322D009049F2 /* StartExplosion.sks in Resources */,
 				3F973F1F290FAC7400625877 /* Assets.xcassets in Resources */,
-				3F973F40290FAD6500625877 /* GokuCorriendo4.png in Resources */,
-				3F973F39290FAD6500625877 /* GokuCorriendo6.png in Resources */,
-				3F973F4E290FAD7C00625877 /* fall.wav in Resources */,
+				F79E956C29102D5F009049F2 /* dead.wav in Resources */,
+				F79E957129102D5F009049F2 /* bg_country.mp3 in Resources */,
+				F79E955A29102D2E009049F2 /* Background.jpg in Resources */,
+				F79E955229102D1C009049F2 /* GokuCorriendo8.png in Resources */,
 				3F973F22290FAC7400625877 /* LaunchScreen.storyboard in Resources */,
-				3F973F3A290FAD6500625877 /* GokuCorriendo7.png in Resources */,
+				F79E955529102D1C009049F2 /* GokuCorriendo5.png in Resources */,
+				F79E956F29102D5F009049F2 /* highScore.wav in Resources */,
+				F79E955E29102D4A009049F2 /* button_retry_up.png in Resources */,
+				F79E955329102D1C009049F2 /* GokuCorriendo1.png in Resources */,
+				F79E955D29102D4A009049F2 /* button_retry_down.png in Resources */,
+				F79E956E29102D5F009049F2 /* fall.wav in Resources */,
+				F79E956B29102D5F009049F2 /* victory.wav in Resources */,
+				F79E957029102D5F009049F2 /* stick_grow_loop.wav in Resources */,
+				F79E955729102D1C009049F2 /* GokuCorriendo6.png in Resources */,
+				F79E955429102D1C009049F2 /* GokuCorriendo3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

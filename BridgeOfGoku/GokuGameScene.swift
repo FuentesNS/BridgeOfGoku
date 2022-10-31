@@ -360,7 +360,7 @@ private extension GokuGameScene {
     func LoadGoku() {
         let personage = SKSpriteNode(imageNamed: "GokuCorriendo1")
         personage.name = GokuGameSceneChildName.PersonageName.rawValue
-        let x:CGFloat = NextLeftStartX - DefinedScreenWidth / 2 - personage.size.width / 2 - GAP.XGAP
+        let x:CGFloat = NextLeftStartX - DefinedScreenWidth / 2.2 - personage.size.width / 2 - GAP.XGAP
         let y:CGFloat = StackHeight + personage.size.height / 2 - DefinedScreenHeight / 2 - GAP.YGAP
         personage.position = CGPoint(x: x, y: y)
         personage.zPosition = GokuGameSceneZposition.PersonageZposition.rawValue
@@ -445,7 +445,7 @@ private extension GokuGameScene {
             
         }
         else {
-            stack.position = CGPoint(x: -DefinedScreenWidth / 2 + width / 2 + startLeftPoint, y: -DefinedScreenHeight / 2 + height / 2)
+            stack.position = CGPoint(x: -DefinedScreenWidth / 2.2 + width / 2 + startLeftPoint, y: -DefinedScreenHeight / 2 + height / 2)
         }
         addChild(stack)
         
@@ -495,7 +495,7 @@ private extension GokuGameScene {
     
     //MARK: - Action
     func StarEmitterActionAtPosition(_ position: CGPoint) -> SKAction {
-        let emitter = SKEmitterNode(fileNamed: "StarExplosion")
+        let emitter = SKEmitterNode(fileNamed: "StartExplosion")
         emitter?.position = position
         emitter?.zPosition = GokuGameSceneZposition.EmitterZposition.rawValue
         emitter?.alpha = 0.6
