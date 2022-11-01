@@ -231,7 +231,7 @@ class GokuGameScene: SKScene, SKPhysicsContactDelegate {
 
             personage.run(WalkAction, withKey: GokuGameSceneActionKey.WalkAction.rawValue)
             personage.run(move, completion: {[unowned self] () -> Void in
-                stick.run(SKAction.rotate(toAngle: CGFloat(-Double.pi), duration: 0.4))
+                stick.run(SKAction.rotate(toAngle: CGFloat(-Double.pi), duration: 0.1))
                 
                 personage.physicsBody!.affectedByGravity = true
                 personage.run(SKAction.playSoundFileNamed(GokuGameSceneEffectAudioName.DeadAudioName.rawValue, waitForCompletion: false))
@@ -293,7 +293,7 @@ class GokuGameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     fileprivate func MoveStackAndCreateNew() {
-        let action = SKAction.move(by: CGVector(dx: -NextLeftStartX + (RightStack?.frame.size.width)! + PlayAbleRect.origin.x - 2, dy: 0), duration: 0.3)
+        let action = SKAction.move(by: CGVector(dx: -NextLeftStartX + (RightStack?.frame.size.width)! + PlayAbleRect.origin.x - 4, dy: 0), duration: 0.3)
         RightStack?.run(action)
         self.RemoveMidTouch(true, left:false)
 
@@ -360,11 +360,11 @@ private extension GokuGameScene {
     func LoadGoku() {
         let personage = SKSpriteNode(imageNamed: "GokuCorriendo1")
         personage.name = GokuGameSceneChildName.PersonageName.rawValue
-        let x:CGFloat = NextLeftStartX - DefinedScreenWidth / 2.2 - personage.size.width / 2 - GAP.XGAP
+        let x:CGFloat = NextLeftStartX - DefinedScreenWidth / 2 - personage.size.width / 2 - GAP.XGAP
         let y:CGFloat = StackHeight + personage.size.height / 2 - DefinedScreenHeight / 2 - GAP.YGAP
         personage.position = CGPoint(x: x, y: y)
         personage.zPosition = GokuGameSceneZposition.PersonageZposition.rawValue
-        personage.physicsBody = SKPhysicsBody(rectangleOf: CGSize(width: 16, height: 18))
+        personage.physicsBody = SKPhysicsBody(rectangleOf: CGSize(width: 30, height: 18))
         personage.physicsBody?.affectedByGravity = false
         personage.physicsBody?.allowsRotation = false
         
@@ -445,10 +445,11 @@ private extension GokuGameScene {
             
         }
         else {
-            stack.position = CGPoint(x: -DefinedScreenWidth / 2.2 + width / 2 + startLeftPoint, y: -DefinedScreenHeight / 2 + height / 2)
+            stack.position = CGPoint(x: -DefinedScreenWidth / 2 + width / 2 + startLeftPoint, y: -DefinedScreenHeight / 2 + height / 2)
         }
         addChild(stack)
         
+        // Color de en medio del stack
         let mid = SKShapeNode(rectOf: CGSize(width: 20, height: 20))
         mid.fillColor = SKColor.yellow
         mid.strokeColor = SKColor.yellow
