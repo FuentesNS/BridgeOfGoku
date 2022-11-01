@@ -15,6 +15,14 @@
 		3F973F29290FACAC00625877 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F973F28290FACAC00625877 /* Tools.swift */; };
 		3F973F2B290FACBF00625877 /* Defined.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F973F2A290FACBF00625877 /* Defined.swift */; };
 		3F973F2D290FACD000625877 /* GokuGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F973F2C290FACCF00625877 /* GokuGameScene.swift */; };
+		F74383F629117FF60023C2FE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74383F529117FF60023C2FE /* HomeViewController.swift */; };
+		F74383F9291180AB0023C2FE /* GokuInCloud.sks in Resources */ = {isa = PBXBuildFile; fileRef = F74383F7291180AB0023C2FE /* GokuInCloud.sks */; };
+		F74383FA291180AB0023C2FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F74383F8291180AB0023C2FE /* Assets.xcassets */; };
+		F74383FC291180E10023C2FE /* GokuCloud.png in Resources */ = {isa = PBXBuildFile; fileRef = F74383FB291180E10023C2FE /* GokuCloud.png */; };
+		F74383FE291183090023C2FE /* HomeGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74383FD291183090023C2FE /* HomeGameScene.swift */; };
+		F74384002911B1FA0023C2FE /* FallingLeaf.sks in Resources */ = {isa = PBXBuildFile; fileRef = F74383FF2911B1FA0023C2FE /* FallingLeaf.sks */; };
+		F74384042911B5090023C2FE /* Leaf.png in Resources */ = {isa = PBXBuildFile; fileRef = F74384032911B5090023C2FE /* Leaf.png */; };
+		F74384082911D4210023C2FE /* LogoApp.png in Resources */ = {isa = PBXBuildFile; fileRef = F74384072911D4210023C2FE /* LogoApp.png */; };
 		F79E955129102D1C009049F2 /* GokuCorriendo4.png in Resources */ = {isa = PBXBuildFile; fileRef = F79E954929102D1C009049F2 /* GokuCorriendo4.png */; };
 		F79E955229102D1C009049F2 /* GokuCorriendo8.png in Resources */ = {isa = PBXBuildFile; fileRef = F79E954A29102D1C009049F2 /* GokuCorriendo8.png */; };
 		F79E955329102D1C009049F2 /* GokuCorriendo1.png in Resources */ = {isa = PBXBuildFile; fileRef = F79E954B29102D1C009049F2 /* GokuCorriendo1.png */; };
@@ -49,6 +57,14 @@
 		3F973F2A290FACBF00625877 /* Defined.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defined.swift; sourceTree = "<group>"; };
 		3F973F2C290FACCF00625877 /* GokuGameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GokuGameScene.swift; sourceTree = "<group>"; };
 		3F973F2E290FAD4F00625877 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F74383F529117FF60023C2FE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F74383F7291180AB0023C2FE /* GokuInCloud.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GokuInCloud.sks; sourceTree = "<group>"; };
+		F74383F8291180AB0023C2FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F74383FB291180E10023C2FE /* GokuCloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GokuCloud.png; sourceTree = "<group>"; };
+		F74383FD291183090023C2FE /* HomeGameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeGameScene.swift; sourceTree = "<group>"; };
+		F74383FF2911B1FA0023C2FE /* FallingLeaf.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FallingLeaf.sks; sourceTree = "<group>"; };
+		F74384032911B5090023C2FE /* Leaf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Leaf.png; sourceTree = "<group>"; };
+		F74384072911D4210023C2FE /* LogoApp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LogoApp.png; path = ../../../Desktop/LogoApp.png; sourceTree = "<group>"; };
 		F79E954929102D1C009049F2 /* GokuCorriendo4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GokuCorriendo4.png; sourceTree = "<group>"; };
 		F79E954A29102D1C009049F2 /* GokuCorriendo8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GokuCorriendo8.png; sourceTree = "<group>"; };
 		F79E954B29102D1C009049F2 /* GokuCorriendo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GokuCorriendo1.png; sourceTree = "<group>"; };
@@ -86,6 +102,7 @@
 		3F973F05290FAC7200625877 = {
 			isa = PBXGroup;
 			children = (
+				F74383F8291180AB0023C2FE /* Assets.xcassets */,
 				F79E957829103BB9009049F2 /* Sounds */,
 				F79E957729103B98009049F2 /* Images */,
 				3F973F10290FAC7200625877 /* BridgeOfGoku */,
@@ -104,12 +121,16 @@
 		3F973F10290FAC7200625877 /* BridgeOfGoku */ = {
 			isa = PBXGroup;
 			children = (
+				F74383FF2911B1FA0023C2FE /* FallingLeaf.sks */,
+				F74383F7291180AB0023C2FE /* GokuInCloud.sks */,
 				F79E95752910322D009049F2 /* StartExplosion.sks */,
+				3F973F11290FAC7200625877 /* AppDelegate.swift */,
+				F74383F529117FF60023C2FE /* HomeViewController.swift */,
+				3F973F19290FAC7200625877 /* GameViewController.swift */,
+				F74383FD291183090023C2FE /* HomeGameScene.swift */,
 				3F973F2C290FACCF00625877 /* GokuGameScene.swift */,
 				3F973F2A290FACBF00625877 /* Defined.swift */,
 				3F973F28290FACAC00625877 /* Tools.swift */,
-				3F973F11290FAC7200625877 /* AppDelegate.swift */,
-				3F973F19290FAC7200625877 /* GameViewController.swift */,
 				3F973F1B290FAC7200625877 /* Main.storyboard */,
 				3F973F1E290FAC7400625877 /* Assets.xcassets */,
 				3F973F20290FAC7400625877 /* LaunchScreen.storyboard */,
@@ -121,6 +142,9 @@
 		F79E957729103B98009049F2 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				F74384072911D4210023C2FE /* LogoApp.png */,
+				F74384032911B5090023C2FE /* Leaf.png */,
+				F74383FB291180E10023C2FE /* GokuCloud.png */,
 				F79E956029102D54009049F2 /* starParticle.png */,
 				F79E955B29102D4A009049F2 /* button_retry_down.png */,
 				F79E955C29102D4A009049F2 /* button_retry_up.png */,
@@ -216,12 +240,18 @@
 				3F973F1D290FAC7200625877 /* Main.storyboard in Resources */,
 				F79E955629102D1C009049F2 /* GokuCorriendo7.png in Resources */,
 				F79E956D29102D5F009049F2 /* touch_mid.wav in Resources */,
+				F74383FA291180AB0023C2FE /* Assets.xcassets in Resources */,
 				F79E957229102D5F009049F2 /* kick.wav in Resources */,
 				F79E95762910322D009049F2 /* StartExplosion.sks in Resources */,
 				3F973F1F290FAC7400625877 /* Assets.xcassets in Resources */,
 				F79E956C29102D5F009049F2 /* dead.wav in Resources */,
+				F74384002911B1FA0023C2FE /* FallingLeaf.sks in Resources */,
+				F74383F9291180AB0023C2FE /* GokuInCloud.sks in Resources */,
 				F79E957129102D5F009049F2 /* bg_country.mp3 in Resources */,
 				F79E955A29102D2E009049F2 /* Background.jpg in Resources */,
+				F74384042911B5090023C2FE /* Leaf.png in Resources */,
+				F74384082911D4210023C2FE /* LogoApp.png in Resources */,
+				F74383FC291180E10023C2FE /* GokuCloud.png in Resources */,
 				F79E955229102D1C009049F2 /* GokuCorriendo8.png in Resources */,
 				3F973F22290FAC7400625877 /* LaunchScreen.storyboard in Resources */,
 				F79E955529102D1C009049F2 /* GokuCorriendo5.png in Resources */,
@@ -249,6 +279,8 @@
 				3F973F12290FAC7200625877 /* AppDelegate.swift in Sources */,
 				3F973F2D290FACD000625877 /* GokuGameScene.swift in Sources */,
 				3F973F2B290FACBF00625877 /* Defined.swift in Sources */,
+				F74383F629117FF60023C2FE /* HomeViewController.swift in Sources */,
+				F74383FE291183090023C2FE /* HomeGameScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

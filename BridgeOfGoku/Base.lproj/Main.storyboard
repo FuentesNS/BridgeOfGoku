@@ -9,19 +9,19 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="AZj-hI-WGY">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="OrD-Jd-jTV" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="RM1-AL-lbD">
+                <viewController modalPresentationStyle="fullScreen" id="OrD-Jd-jTV" customClass="HomeViewController" customModule="BridgeOfGoku" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RM1-AL-lbD" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i2h-lo-Pue">
-                                <rect key="frame" x="0.0" y="730" width="390" height="80"/>
+                                <rect key="frame" x="0.0" y="750" width="390" height="60"/>
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="bYJ-vc-QhS"/>
+                                    <constraint firstAttribute="height" constant="60" id="bYJ-vc-QhS"/>
                                 </constraints>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Jugar">
@@ -31,18 +31,10 @@
                                     <segue destination="BV1-FR-VrT" kind="show" id="rka-yw-aYy"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="35C-If-4Oo">
-                                <rect key="frame" x="0.0" y="47" width="390" height="683"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="be4-Wu-WOy"/>
-                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="35C-If-4Oo" firstAttribute="leading" secondItem="be4-Wu-WOy" secondAttribute="leading" id="0UZ-as-Spc"/>
-                            <constraint firstItem="i2h-lo-Pue" firstAttribute="top" secondItem="35C-If-4Oo" secondAttribute="bottom" id="BzZ-a1-ELe"/>
-                            <constraint firstItem="35C-If-4Oo" firstAttribute="top" secondItem="be4-Wu-WOy" secondAttribute="top" id="feV-DN-jCb"/>
-                            <constraint firstItem="35C-If-4Oo" firstAttribute="trailing" secondItem="be4-Wu-WOy" secondAttribute="trailing" id="flD-mh-kXf"/>
                             <constraint firstItem="be4-Wu-WOy" firstAttribute="bottom" secondItem="i2h-lo-Pue" secondAttribute="bottom" id="ggg-7L-q6o"/>
                             <constraint firstItem="be4-Wu-WOy" firstAttribute="trailing" secondItem="i2h-lo-Pue" secondAttribute="trailing" id="l8G-Mc-vEZ"/>
                             <constraint firstItem="i2h-lo-Pue" firstAttribute="leading" secondItem="be4-Wu-WOy" secondAttribute="leading" id="ySZ-en-eAF"/>
@@ -90,7 +82,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Background.jpg" width="368.6400146484375" height="756"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
@@ -102,9 +93,6 @@
         </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tertiarySystemGroupedBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
