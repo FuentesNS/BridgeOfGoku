@@ -9,6 +9,14 @@ import SpriteKit
 import Foundation
 
 class GokuGameScene: SKScene, SKPhysicsContactDelegate {
+    
+    //MARK: Variables
+    var IsBegin = false
+    var IsEnd = false
+    var LeftStack:SKShapeNode?
+    var RightStack:SKShapeNode?
+    
+    
     struct GAP {
         static let XGAP:CGFloat = 20
         static let YGAP:CGFloat = 4
@@ -24,23 +32,6 @@ class GokuGameScene: SKScene, SKPhysicsContactDelegate {
             
         }
     }
-    
-    let StackHeight:CGFloat = 400.0
-    let StackMaxWidth:CGFloat = 300.0
-    let StackMinWidth:CGFloat = 100.0
-    let Gravity:CGFloat = -100.0
-    let StackGapMinWidth:Int = 80
-    let GokuSpeed:CGFloat = 760
-    
-    let StoreScoreName = "com.BridgeOfGoku.score"
- 
-    var IsBegin = false
-    var IsEnd = false
-    var LeftStack:SKShapeNode?
-    var RightStack:SKShapeNode?
-    
-    var NextLeftStartX:CGFloat = 0
-    var StickHeight:CGFloat = 0
     
     var Score:Int = 0 {
         willSet {
@@ -107,7 +98,7 @@ class GokuGameScene: SKScene, SKPhysicsContactDelegate {
             let stick = LoadStick()
             let personage = childNode(withName: GokuGameSceneChildName.PersonageName.rawValue) as! SKSpriteNode
      
-            let action = SKAction.resize(toHeight: CGFloat(DefinedScreenHeight - StackHeight), duration: 1.5)
+            let action = SKAction.resize(toHeight: CGFloat(DefinedScreenHeight - K.StackHeight), duration: 1.5)
             stick.run(action, withKey:GokuGameSceneActionKey.StickGrowAction.rawValue)
             
             let scaleAction = SKAction.sequence([SKAction.scaleY(to: 0.9, duration: 0.05), SKAction.scaleY(to: 1, duration: 0.05)])
@@ -133,7 +124,7 @@ class GokuGameScene: SKScene, SKPhysicsContactDelegate {
             stick.removeAction(forKey: GokuGameSceneActionKey.StickGrowAudioAction.rawValue)
             stick.run(SKAction.playSoundFileNamed(GokuGameSceneEffectAudioName.StickGrowOverAudioName.rawValue, waitForCompletion: false))
             
-            StickHeight = stick.size.height;
+            K.StickHeight = stick.size.height;
             
             let action = SKAction.rotate(toAngle: CGFloat(-Double.pi / 2), duration: 0.4, shortestUnitArc: true)
             let playFall = SKAction.playSoundFileNamed(GokuGameSceneEffectAudioName.StickFallAudioName.rawValue, waitForCompletion: false)
@@ -155,20 +146,19 @@ class GokuGameScene: SKScene, SKPhysicsContactDelegate {
         self.RemoveMidTouch(false, left:true)
         LoadGoku()
  
-        let maxGap = Int(PlayAbleRect.width - StackMaxWidth - (LeftStack?.frame.size.width)!)
+        let maxGap = Int(PlayAbleRect.width - K.StackMaxWidth - (LeftStack?.frame.size.width)!)
         
-        let gap = CGFloat(RandomInRange(StackGapMinWidth...maxGap))
-        RightStack = LoadStacks(false, startLeftPoint: NextLeftStartX + gap)
+        let gap = CGFloat(RandomInRange(K.StackGapMinWidth...maxGap))
+        RightStack = LoadStacks(false, startLeftPoint: K.NextLeftStartX + gap)
         
         GameOver = false
     }
     
     func Restart() {
-        //记录分数
         IsBegin = false
         IsEnd = false
         Score = 0
-        NextLeftStartX = 0
+        K.NextLeftStartX = 0
         removeAllChildren()
         Start()
     }
@@ -176,9 +166,9 @@ class GokuGameScene: SKScene, SKPhysicsContactDelegate {
     fileprivate func CheckPass() -> Bool {
         let stick = childNode(withName: GokuGameSceneChildName.StickName.rawValue) as! SKSpriteNode
 
-        let rightPoint = DefinedScreenWidth / 2 + stick.position.x + self.StickHeight
+        let rightPoint = DefinedScreenWidth / 2 + stick.position.x + K.StickHeight
         
-        guard rightPoint < self.NextLeftStartX else {
+        guard rightPoint < K.NextLeftStartX else {
             return false
         }
         
@@ -197,7 +187,7 @@ class GokuGameScene: SKScene, SKPhysicsContactDelegate {
         
         let newPoint = stackMid.convert(CGPoint(x: -10, y: 10), to: self)
         
-        if ((stick.position.x + self.StickHeight) >= newPoint.x  && (stick.position.x + self.StickHeight) <= newPoint.x + 20) {
+        if ((stick.position.x + K.StickHeight) >= newPoint.x  && (stick.position.x + K.StickHeight) <= newPoint.x + 20) {
             LoadPerfect()
             self.run(SKAction.playSoundFileNamed(GokuGameSceneEffectAudioName.StickTouchMidAudioName.rawValue, waitForCompletion: false))
             Score += 1
@@ -222,12 +212,12 @@ class GokuGameScene: SKScene, SKPhysicsContactDelegate {
         guard pass else {
             let stick = childNode(withName: GokuGameSceneChildName.StickName.rawValue) as! SKSpriteNode
             
-            let dis:CGFloat = stick.position.x + self.StickHeight
+            let dis:CGFloat = stick.position.x + K.StickHeight
             
             let overGap = DefinedScreenWidth / 2 - abs(personage.position.x)
-            let disGap = NextLeftStartX - overGap - (RightStack?.frame.size.width)! / 2
+            let disGap = K.NextLeftStartX - overGap - (RightStack?.frame.size.width)! / 2
 
-            let move = SKAction.moveTo(x: dis, duration: TimeInterval(abs(disGap / GokuSpeed)))
+            let move = SKAction.moveTo(x: dis, duration: TimeInterval(abs(disGap / K.GokuSpeed)))
 
             personage.run(WalkAction, withKey: GokuGameSceneActionKey.WalkAction.rawValue)
             personage.run(move, completion: {[unowned self] () -> Void in
@@ -244,12 +234,12 @@ class GokuGameScene: SKScene, SKPhysicsContactDelegate {
             return
         }
         
-        let dis:CGFloat = NextLeftStartX - DefinedScreenWidth / 2 - personage.size.width / 2 - GAP.XGAP
+        let dis:CGFloat = K.NextLeftStartX - DefinedScreenWidth / 2 - personage.size.width / 2 - GAP.XGAP
         
         let overGap = DefinedScreenWidth / 2 - abs(personage.position.x)
-        let disGap = NextLeftStartX - overGap - (RightStack?.frame.size.width)! / 2
+        let disGap = K.NextLeftStartX - overGap - (RightStack?.frame.size.width)! / 2
         
-        let move = SKAction.moveTo(x: dis, duration: TimeInterval(abs(disGap / GokuSpeed)))
+        let move = SKAction.moveTo(x: dis, duration: TimeInterval(abs(disGap / K.GokuSpeed)))
  
         personage.run(WalkAction, withKey: GokuGameSceneActionKey.WalkAction.rawValue)
         personage.run(move, completion: { [unowned self]() -> Void in
@@ -262,11 +252,11 @@ class GokuGameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     fileprivate func CheckHighScoreAndStore() {
-        let highScore = UserDefaults.standard.integer(forKey: StoreScoreName)
+        let highScore = UserDefaults.standard.integer(forKey: K.StoreScoreName)
         if (Score > Int(highScore)) {
             ShowHighScore()
             
-            UserDefaults.standard.set(Score, forKey: StoreScoreName)
+            UserDefaults.standard.set(Score, forKey: K.StoreScoreName)
             UserDefaults.standard.synchronize()
         }
     }
@@ -293,7 +283,7 @@ class GokuGameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     fileprivate func MoveStackAndCreateNew() {
-        let action = SKAction.move(by: CGVector(dx: -NextLeftStartX + (RightStack?.frame.size.width)! + PlayAbleRect.origin.x - 4, dy: 0), duration: 0.3)
+        let action = SKAction.move(by: CGVector(dx: -K.NextLeftStartX + (RightStack?.frame.size.width)! + PlayAbleRect.origin.x - 4, dy: 0), duration: 0.3)
         RightStack?.run(action)
         self.RemoveMidTouch(true, left:false)
 
@@ -308,8 +298,8 @@ class GokuGameScene: SKScene, SKPhysicsContactDelegate {
         LeftStack?.run(SKAction.move(by: CGVector(dx: -DefinedScreenWidth, dy: 0), duration: 0.5), completion: {[unowned self] () -> Void in
             self.LeftStack?.removeFromParent()
             
-            let maxGap = Int(self.PlayAbleRect.width - (self.RightStack?.frame.size.width)! - self.StackMaxWidth)
-            let gap = CGFloat(RandomInRange(self.StackGapMinWidth...maxGap))
+            let maxGap = Int(self.PlayAbleRect.width - (self.RightStack?.frame.size.width)! - K.StackMaxWidth)
+            let gap = CGFloat(RandomInRange(K.StackGapMinWidth...maxGap))
             
             self.LeftStack = self.RightStack
             self.RightStack = self.LoadStacks(true, startLeftPoint:self.PlayAbleRect.origin.x + (self.RightStack?.frame.size.width)! + gap)
@@ -329,7 +319,7 @@ private extension GokuGameScene {
             let node = SKSpriteNode(texture: texture)
             node.size = texture.size()
             node.zPosition = GokuGameSceneZposition.BackgroundZposition.rawValue
-            self.physicsWorld.gravity = CGVector(dx: 0, dy: Gravity)
+            self.physicsWorld.gravity = CGVector(dx: 0, dy: K.Gravity)
             
             addChild(node)
             return
@@ -360,8 +350,8 @@ private extension GokuGameScene {
     func LoadGoku() {
         let personage = SKSpriteNode(imageNamed: "GokuCorriendo1")
         personage.name = GokuGameSceneChildName.PersonageName.rawValue
-        let x:CGFloat = NextLeftStartX - DefinedScreenWidth / 2 - personage.size.width / 2 - GAP.XGAP
-        let y:CGFloat = StackHeight + personage.size.height / 2 - DefinedScreenHeight / 2 - GAP.YGAP
+        let x:CGFloat = K.NextLeftStartX - DefinedScreenWidth / 2 - personage.size.width / 2 - GAP.XGAP
+        let y:CGFloat = K.StackHeight + personage.size.height / 2 - DefinedScreenHeight / 2 - GAP.YGAP
         personage.position = CGPoint(x: x, y: y)
         personage.zPosition = GokuGameSceneZposition.PersonageZposition.rawValue
         personage.physicsBody = SKPhysicsBody(rectangleOf: CGSize(width: 30, height: 18))
@@ -425,10 +415,10 @@ private extension GokuGameScene {
     }
     
     func LoadStacks(_ animate: Bool, startLeftPoint: CGFloat) -> SKShapeNode {
-        let max:Int = Int(StackMaxWidth / 10)
-        let min:Int = Int(StackMinWidth / 10)
+        let max:Int = Int(K.StackMaxWidth / 10)
+        let min:Int = Int(K.StackMinWidth / 10)
         let width:CGFloat = CGFloat(RandomInRange(min...max) * 10)
-        let height:CGFloat = StackHeight
+        let height:CGFloat = K.StackHeight
         let stack = SKShapeNode(rectOf: CGSize(width: width, height: height))
         stack.fillColor = SKColor.black
         stack.strokeColor = SKColor.purple
@@ -458,7 +448,7 @@ private extension GokuGameScene {
         mid.position = CGPoint(x: 0, y: height / 2 - 20 / 2)
         stack.addChild(mid)
         
-        NextLeftStartX = width + startLeftPoint
+        K.NextLeftStartX = width + startLeftPoint
         
         return stack
     }
